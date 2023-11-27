@@ -353,7 +353,7 @@ std::vector<std::vector<double>> getAllCentroids_C (std::vector<std::string> tre
   std::vector<int> dropIndex(0);
   for(unsigned int i = 0; i < size; ++i)
   {
-    allCentroid[i] = getRankCentroid_C(allRankNames[i],dropIndex,treeTip,treeMatCol0, treeMatCol1,rankList,true,num_threads);
+    allCentroid[i] = getRankCentroid_C(allRankNames[i],dropIndex,treeTip,treeMatCol0, treeMatCol1,rankList,show_progress,num_threads);
     if(show_progress)
     {
       double progressPercent = 100*((double)i+1)/(double)size;
