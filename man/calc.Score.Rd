@@ -13,7 +13,7 @@ Calculate scores of a phylogenetic tree to find and prioritize erroneous taxa to
 \item{tree}{A phylogenetic tree to be checked. This is loaded by ape::read.tree() from a file.}
 \item{OTUrankData}{A list composed of two character vectors. The first vector is tips of tree. The second vector is the upper rank of the tips. When this is NULL, the function assumes that all the tree tips are expressed as Genus_species like Homo_sapience, and calculate the score for genera. When this is not NULL, the function returns scores based on the upper rank in this list.}
 \item{allRankNames}{This can be omitted.
-This is a unique character vector of the upper ranks of the tree tips. If given, the caluclation will be a little faster.}
+This is a unique character vector of the upper ranks of the tree tips. If given, the calculation will be a little faster.}
 \item{allCentroids}{This can be omitted.
 This is a list of numeric vectors of the centroids of ranks. If given, the caluclation will be a little faster.}
 \item{dropIndex}{This can be omitted.
