@@ -1,6 +1,6 @@
 ---
 title: "Apoderoides Tutorial"
-author: "[Satoshi Aoki](http://~~/)"
+author: "[Satoshi Aoki](https://sites.google.com/view/s-aoki)"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
@@ -46,7 +46,7 @@ Otherwise, please load your own phylogenetic tree by a command like this:
 testTree <- read.tree(file="/directory/yourTree.tre")
 ```
 
-### 3.2 Score calulation
+### 3.2 Score calculation
 #### 3.2.1. Score at genus level
 
 Let's calculate the score of taxa in the loaded tree at genus level. Taxa with higher scores are more harmful to monophyly of genera, and such taxa are considered erroneous. The score is calculated by the next command: 

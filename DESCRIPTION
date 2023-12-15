@@ -1,14 +1,15 @@
 Package: Apoderoides
 Type: Package
-Title: Prioritize and delete erroneous taxa in a large phylogenetic tree
-Version: 0.1.1.0
+Title: Prioritize and Delete Erroneous Taxa in a Large Phylogenetic Tree
+Version: 1.0.0
 Author: Satoshi Aoki
 Maintainer: Satoshi Aoki <aokis1ll1@gmail.com>
-Date: 2023-10-30
-Description: This package points and scores erroneous taxa in a phylogenetic tree and helps finding artificial errors in GenBank sequences. This package calculate scores for taxa in a tree. Higher score means the taxon is more erroneous. If the score is zero for a taxon, the taxon is not erroneous. This package also can remove all erroneous taxa automatically by iterating score calculation and pruning taxa with the highest score.
+Date: 2023-12-15
+Description: Finds, prioritizes and deletes erroneous taxa in a phylogenetic tree. This package calculate scores for taxa in a tree. Higher score means the taxon is more erroneous. If the score is zero for a taxon, the taxon is not erroneous. This package also can remove all erroneous taxa automatically by iterating score calculation and pruning taxa with the highest score.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends: R (>= 3.5.0)
 Imports: 
     ape,
     Rcpp,

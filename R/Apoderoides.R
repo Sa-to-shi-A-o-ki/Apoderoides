@@ -155,7 +155,7 @@ autoDeletion<-function(tree,OTUrankData=NULL,show_progress=T,num_threads=1)
     {
       break
     }
-    score<-calc.Score(tree,OTUrankData,allRankNames,allCentroids,dropIndex,show_progress,num_threads)
+    score<-calc.Score(tree,OTUrankData,allRankNames,allCentroids,dropIndex,show_progress=show_progress,num_threads=num_threads)
     #check the score reached 0
     if(score[1,2][[1]]==0)
     {
