@@ -1,6 +1,6 @@
 ---
 title: "Apoderoides Tutorial"
-author: "[Satoshi Aoki](http://~~/)"
+author: "[Satoshi Aoki](https://sites.google.com/view/s-aoki)"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
