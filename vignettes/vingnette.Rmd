@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 Apoderoides is an R package for finding and deleting erroneous taxa from a phylogenetic tree by calculating scores for each taxa. The score shows how erroneous the taxon and can prioritize which taxon should be deleted first. Apoderoides especially focuses on erroneous taxa caused by taxon mistake or misidentification.
 
 
-## 2 Instalation
+## 2 Installation
 You can install Apoderoides by the following commands on R console. This command requires the Internet connection.
 
 ```{r, eval=FALSE}
