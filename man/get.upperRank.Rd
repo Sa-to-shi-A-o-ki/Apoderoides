@@ -11,6 +11,9 @@ Obtain upper rank of scientific names in data. When OTUrankData is not provided,
 \item{data}{A vector of characters.}
 \item{OTUrankData}{A list composed of two character vectors. The first vector is tips of tree. The second vector is the upper rank of the tips. When this is NULL, the function assumes that all the tree tips are expressed as Genus_species like Homo_sapience, and calculate the score for genera. When this is not NULL, the function returns scores based on the upper rank in this list.}
 }
+\value{
+A vector of characters of upper rank.
+}
 \examples{
 #obtain genus name
 get.upperRank(c("Oxalis_nipponica","Homo_sapiens"))

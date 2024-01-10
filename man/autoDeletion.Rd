@@ -2,16 +2,19 @@
 \alias{autoDeletion}
 \title{autoDeletion}
 \usage{
-autoDeletion(tree,OTUrankData=NULL,show_progress=T,num_threads=1)
+autoDeletion(tree,OTUrankData=NULL,show_progress=TRUE,num_threads=1)
 }
 \description{
-Iterate calc.Score() and DeleteAnomaly() until all the tree tips have 0 score or the number of the tips becomes three or lower. The returned result is a list of three elements. The first one is a tree without erroneous taxa. The second is a vector of deleted tip labels. The third is a list of the scores during the iteration.
+Iterate calc.Score() and DeleteAnomaly() until all the tree tips have 0 score or the number of the tips becomes three or lower.
 }
 \arguments{
 \item{tree}{A phylogenetic tree to be checked. This is loaded by ape::read.tree() from a file.}
 \item{OTUrankData}{A list composed of two character vectors. The first vector is tips of tree. The second vector is the upper rank of the tips. When this is NULL, the function assumes that all the tree tips are expressed as Genus_species like Homo_sapience, and calculates for genera. When this is not NULL, the function calculates based on the upper rank in this list.}
 \item{show_progress}{If TRUE, calculation progress is shown on the R console.}
 \item{num_threads}{A positive integer to specify the number of threads to calculate.}
+}
+\value{
+A list of the length three. The first element is a list of phylogenetic tree from which erroneous taxa are deleted. The second is a character vector of deleted taxa. The third is a list of lists showing the transition of the score. See \link{calc.Score} about the contents of the third element.
 }
 \examples{
 data(testTree)

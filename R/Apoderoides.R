@@ -20,7 +20,7 @@ get.upperRank<-function(data,OTUrankData=NULL)
 deleteAnomaly<-function(tree,score,OTUrankData=NULL,drop=FALSE)
 {
   droppingIndex<-list()
-  score<-score[order(as.numeric(score[,2]),decreasing=T),]
+  score<-score[order(as.numeric(score[,2]),decreasing=TRUE),]
   topOTUScore<-score[1,2][[1]]
   #when the top OTU score is 0, return
   if(topOTUScore==0)
@@ -122,7 +122,7 @@ deleteAnomaly<-function(tree,score,OTUrankData=NULL,drop=FALSE)
   }
 }
 
-autoDeletion<-function(tree,OTUrankData=NULL,show_progress=T,num_threads=1)
+autoDeletion<-function(tree,OTUrankData=NULL,show_progress=TRUE,num_threads=1)
 {
   if(length(tree$tip)<=3)
   {
@@ -342,7 +342,7 @@ calc.Score<-function(tree,OTUrankData=NULL,allRankNames=NULL,allCentroids=NULL,d
   colnames(score)<-c("OTU","perCladeOTUScore","sum","intruder","outlier","#clade")
   if(sort)
   {
-    return(score[order(as.numeric(score[,2]),decreasing=T),])
+    return(score[order(as.numeric(score[,2]),decreasing=TRUE),])
   }
   else
   {

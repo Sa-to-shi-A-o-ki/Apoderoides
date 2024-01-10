@@ -22,6 +22,15 @@ A numeric vector of indices of tree tips. The tree tips indicated by this dropIn
 \item{show_progress}{If TRUE, calculation progress is shown on the R console.}
 \item{num_threads}{A positive integer to specify the number of threads to calculate the scores.}
 }
+\value{
+A matrix of characters. The following explains the columns in the matrix.
+\item{OTU}{The name of tree tip.}
+\item{perCladeOTUScore}{The final score calculated by "sum" divided by the number of OTUs with the same "#clade".}
+\item{sum}{The sum of "intruder" and "outlier" for the OTU.}
+\item{intruder}{The intruder score showing how many ranks the OTU intruding into.}
+\item{outlier}{The outlier score showing how the OTU is far away from the core clade of the belonging rank.}
+\item{#clade}{The clade number. Monophyletic OTUs with the same rank has the same #clade.}
+}
 \examples{
 data(testTree)
 #calculate scores for genus
