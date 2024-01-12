@@ -15,7 +15,7 @@ Calculate scores of a phylogenetic tree to find and prioritize erroneous taxa to
 \item{allRankNames}{This can be omitted.
 This is a unique character vector of the upper ranks of the tree tips. If given, the calculation will be a little faster.}
 \item{allCentroids}{This can be omitted.
-This is a list of numeric vectors of the centroids of ranks. If given, the caluclation will be a little faster.}
+This is a list of numeric vectors of the centroids of ranks. If given, the calculation will be a little faster.}
 \item{dropIndex}{This can be omitted.
 A numeric vector of indices of tree tips. The tree tips indicated by this dropIndex will be removed from the score calculation.}
 \item{sort}{If TRUE, the calculation result is sorted by descending order of the total score.}
