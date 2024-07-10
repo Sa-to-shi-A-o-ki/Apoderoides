@@ -12,7 +12,7 @@
 
 <meta name="author" content="Satoshi Aoki" />
 
-<meta name="date" content="2024-06-14" />
+<meta name="date" content="2024-07-10" />
 
 <title>Apoderoides Tutorial</title>
 
@@ -340,7 +340,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">Apoderoides Tutorial</h1>
 <h4 class="author"><a href="https://sites.google.com/view/s-aoki">Satoshi Aoki</a></h4>
-<h4 class="date">2024-06-14</h4>
+<h4 class="date">2024-07-10</h4>
 
 
 
@@ -466,11 +466,11 @@ such auto deletion of erroneous taxa for the test tree:</p>
 <span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="fu">autoDeletion</span>(testTree)</span>
 <span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="co">#for family level</span></span>
 <span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a><span class="fu">autoDeletion</span>(testTree,testRankList)</span></code></pre></div>
-<p>The output of <code>autoDeletion()</code> is a list of size 4. The
+<p>The output of <code>autoDeletion()</code> is a list of size 3. The
 first element is the tree without erroneous tips. The second element is
-a character vector of deleted tree tips. The third and fourth elements
-are lists of centroid-based and MRCA-based scores repeatedly calculated
-until all the erroneous tips are deleted.</p>
+a character vector of deleted tree tips. The third element is a list of
+scores repeatedly calculated until all the erroneous tips are
+deleted.</p>
 </div>
 <div id="the-other-utilities-to-help-analysis" class="section level3">
 <h3>3.4 The other utilities to help analysis</h3>
